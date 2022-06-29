@@ -41,7 +41,7 @@ export default function Home() {
             bgClip='text'
             fontSize='6xl'
             fontWeight='extrabold'>
-            Welcome!
+            Résumé
           </Text>
         </Center>
       </Box>
