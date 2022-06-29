@@ -4,22 +4,22 @@ import { Center, Square, Circle } from '@chakra-ui/react'
 import { Button, ButtonGroup } from '@chakra-ui/react'
 import { Heading } from '@chakra-ui/react'
 import { Text } from "@chakra-ui/react"
+import { Link } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react'
-
-
-import Link from 'next/link';
+import { Code } from '@chakra-ui/react'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 
 export default function Home() {
   return (
-    <Box>
+    <Box> 
       <Box bg='black' w='100%' h = '48px' p={4} color='white'>
         <Center>
           <HStack spacing='36px'>
-            <Box w='72px' h='48px' color='#007fff'>
+            <Box w='72px' h='48px'>
               <Link href='/'>Home</Link>
             </Box>
-            <Box w='90px' h='48px'>
+            <Box w='90px' h='48px' color='#007fff'>
               <Link href='/posts/resume'>Résumé</Link>
             </Box>
             <Box w='90px' h='48px'>
@@ -45,21 +45,21 @@ export default function Home() {
           </Text>
         </Center>
       </Box>
-      <Box bg='#FAFAFA' w='100%' h='calc(100vh)' p={4} color='black'>
-        <Center>
-          <Stack spacing = '24px'>
+      <Box bg='#FAFAFA' w='100%' h='calc(200vh)' p={4} color='black'>
+      <Center>
+        <Stack spacing='24px'>
+          <Center>
             <HStack spacing='24px'>
-              <Image borderRadius='full'h='500px' w='500x' src="https://i.lensdump.com/i/tzpNKx.jpg" alt='Mason Adams Photo' />
-              <Text
-                bgGradient='linear(to-l, red, #7f00ff)'
-                bgClip='text'
-                fontSize='3xl'
-                fontWeight='extrabold'>
-                Blah blah blah, 
-                but pretty
-              </Text>
+              <Link href='https://www.linkedin.com/in/masonadams25/' isExternal>
+              LinkedIn <ExternalLinkIcon mx='2px' />
+              </Link>
+              <Link href='https://github.com/masonadams25' isExternal>
+              Github <ExternalLinkIcon mx='2px' />
+              </Link>
             </HStack>
-          </Stack>
+          </Center>
+          <Image h='1000px' w='770px' src="https://i3.lensdump.com/i/tzpvhM.jpg" alt='Mason Adams Resume' />
+        </Stack>
         </Center>
       </Box>
     </Box>
