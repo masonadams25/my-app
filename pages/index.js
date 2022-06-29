@@ -9,7 +9,7 @@ import { Image } from '@chakra-ui/react'
 
 import Link from 'next/link';
 
-
+//main
 export default function Home() {
   return (
     <Box>
