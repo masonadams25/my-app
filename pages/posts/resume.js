@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import { Box } from '@chakra-ui/react'
 import { Stack, HStack, VStack } from '@chakra-ui/react'
 import { Center, Square, Circle } from '@chakra-ui/react'
@@ -8,32 +9,13 @@ import { Link } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react'
 import { Code } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { NavigationBar } from '../components/NavBar'
 
 
 export default function Home() {
   return (
     <Box> 
-      <Box bg='black' w='100%' h = '48px' p={4} color='white'>
-        <Center>
-          <HStack spacing='36px'>
-            <Box w='72px' h='48px'>
-              <Link href='/'>Home</Link>
-            </Box>
-            <Box w='90px' h='48px' color='#007fff'>
-              <Link href='/posts/resume'>Résumé</Link>
-            </Box>
-            <Box w='90px' h='48px'>
-            <Link href='/posts/second-post'>Education</Link>
-            </Box>
-            <Box w='90px' h='48px'>
-            <Link href='/posts/third-post'>Experience</Link>
-            </Box>
-            <Box w='90px' h='48px'>
-            <Link href='/posts/fourth-post'>Projects</Link>
-            </Box>
-          </HStack>
-        </Center>
-      </Box>
+      <NavigationBar/>
       <Box bg='#343434' w='100%'>
         <Center>
           <Text
@@ -41,7 +23,7 @@ export default function Home() {
             bgClip='text'
             fontSize='6xl'
             fontWeight='extrabold'>
-            Welcome!
+              Résumé
           </Text>
         </Center>
       </Box>
