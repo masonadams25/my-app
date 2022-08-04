@@ -1,14 +1,10 @@
-import React, { Component, useState, useEffect }  from 'react';
+import React, { useState, useEffect }  from 'react';
 import { Box } from '@chakra-ui/react'
-import { Stack, HStack, VStack } from '@chakra-ui/react'
-import { Center, Square, Circle } from '@chakra-ui/react'
-import { Button, ButtonGroup } from '@chakra-ui/react'
-import { Heading } from '@chakra-ui/react'
+import { Stack, HStack} from '@chakra-ui/react'
+import { Center} from '@chakra-ui/react'
 import { Text } from "@chakra-ui/react"
 import { Image } from '@chakra-ui/react'
-import Link from 'next/link';
 import { NavigationBar } from './components/NavBar'
-import { NavStack } from './components/NavStack';
 
 export function useWindowSize() {
   // Initialize state with undefined width/height so server and client renders match
@@ -46,9 +42,6 @@ export function useWindowSize() {
 
 
 export default function Home() {
-  const size = useWindowSize();
-  const isMobile = (size.width <= 800)
-
   return (
     <Box>
       <NavigationBar/>
@@ -75,8 +68,7 @@ export default function Home() {
                 bgClip='text'
                 fontSize='3xl'
                 fontWeight='extrabold'>
-                Blah blah blah, 
-                but pretty
+                Test Branch!
               </Text>
             </HStack>
           </Stack>

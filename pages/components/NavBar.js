@@ -1,23 +1,15 @@
-import React, { Component, useState, useEffect }  from 'react';
+import React, { useState, useEffect }  from 'react';
 import { Box,
          Menu,
          MenuButton,
          MenuList,
-         MenuItem,
-         MenuItemOption,
-         MenuGroup,
-         MenuOptionGroup,
-         MenuDivider
+         MenuItem
        } from '@chakra-ui/react'
-import { Stack, HStack, VStack } from '@chakra-ui/react'
-import { Center, Square, Circle } from '@chakra-ui/react'
-import { Button, ButtonGroup } from '@chakra-ui/react'
-import { Heading } from '@chakra-ui/react'
+import { HStack} from '@chakra-ui/react'
+import { Center} from '@chakra-ui/react'
+import { Button} from '@chakra-ui/react'
 import { Text } from "@chakra-ui/react"
 import { Link } from '@chakra-ui/react'
-import { Image } from '@chakra-ui/react'
-import { Code } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { HamburgerIcon } from '@chakra-ui/icons'
 
 export function useWindowSize() {
